@@ -32,6 +32,7 @@
     - [Create option](#create-option)
     - [Compile option](#compile-option)
   - [Compilation pipeline](#compilation-pipeline)
+    - [Sclera phase](#sclera-phase)
   - [Sclera format](#sclera-format)
 
 ## Introduction
@@ -301,6 +302,25 @@ If any of the items of the [project structure](#project-structure), including th
 
 ## Compilation pipeline
 
+Once the [compile option](#compile-option) starts executing, the [Iris binary](#iris-compiler) will enter the compilation pipeline. This is the pipeline where the project files get translated into the resulting output. The order is always the same:
+
+1. Sclera phase
+2. Cornea phase
+3. Resources phase
+4. Native libraries phase
+5. Retina libraries phase
+6. Lens phase
+7. Iris phase
+8. Pupil phase
+9. Vitreous phase
+10. Macula phase
+11. Nerve phase
+
+Please note that some steps happen linearly and others may be occur concurrently.
+
+### Sclera phase
+
+
+
 ## Sclera format
 
-About to come soon....
